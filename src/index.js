@@ -2,7 +2,7 @@ const chokidar  = require('chokidar');
 
 // Initialize watcher.
 const watcher = chokidar.watch('./src', {
-    ignored: /(^|[\/\\])\../, // ignore dotfiles
+    ignored: /index.js/, // ignore dotfiles
     persistent: true , 
     ignoreInitial : true ,
 

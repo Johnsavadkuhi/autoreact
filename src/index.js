@@ -1,4 +1,6 @@
 const chokidar  = require('chokidar'); 
+const fs = require('fs'); 
+const path = require('path'); 
 
 // Initialize watcher.
 const watcher = chokidar.watch('./src', {
@@ -13,7 +15,7 @@ const watcher = chokidar.watch('./src', {
   
   // Add event listeners.
   watcher
-    .on('add', path => {
+    .on('add', p => {
 
     })
     

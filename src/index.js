@@ -19,8 +19,16 @@ const watcher = chokidar.watch('./src', {
 
       if(path.extname(p)===".js"){
         
-        fs.writeFile(p , `hello` , function(e){log(e)}); 
+        fs.writeFile(p , `import React from 'react' \n
+        
+        function ${path.parse(p).name[0]}(){
 
+          return (<div></div>);
+
+        }
+        
+        
+        ` , function(e){log(e)});
 
 
       }

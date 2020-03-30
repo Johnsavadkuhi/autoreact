@@ -19,7 +19,6 @@ const watcher = chokidar.watch('./src', {
 
       if(path.parse(p).name[0] !== path.parse(p).name[0].toUpperCase()){
         log(p);
-       // fs.rename('src/gggg.js',  'src/g.js' , function(e){log(e)});
         
      }
       if(path.extname(p)===".js"){

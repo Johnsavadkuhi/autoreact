@@ -17,5 +17,13 @@ const watcher = chokidar.watch('./src', {
   watcher
     .on('add', p => {
 
+      if(path.extname(p)===".js"){
+        
+        fs.writeFile(p , `hello` , function(e){log(e)}); 
+
+
+
+      }
+
     })
     

@@ -21,13 +21,13 @@ const watcher = chokidar.watch('./src', {
         
         fs.writeFile(p , `import React from 'react' \n
         
-        function ${path.parse(p).name[0]}(){
+        function ${path.parse(p).name[0].toUpperCase } + ${ path.parse(p).name.slice(1).toUpperCase()}(){
 
           return (<div></div>);
 
         }
         
-        
+        export default ${path.parse(p).name[0].toUpperCase }  + ${  path.parse(p).name.slice(1).toUpperCase()} ; 
         ` , function(e){log(e)});
 
 

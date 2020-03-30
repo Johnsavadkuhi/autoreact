@@ -1,14 +1,14 @@
 {
-  "name": "t",
+  "name": "autoreact",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": { 
-    "start": "backpack index.ts",
+    "start": "backpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "John Savadkuhi physitime@gmail.com",
   "license": "GPL",
   "dependencies": {
     "backpack-core": "*0.8.4",
@@ -18,4 +18,5 @@
     "progress": "*2.0.3",
     "pweb3": "latest"
   }
+
 }

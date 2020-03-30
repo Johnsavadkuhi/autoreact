@@ -31,11 +31,12 @@ const watcher = chokidar.watch('./src', {
         ` , function(e){log(e)});
 
       if(path.parse(p).name[0] !== path.parse(p).name[0].toUpperCase()){
-        fs.rename(p , )
-        log("not same "); 
+        fs.rename( p , `${path.parse(p).name[0].toUpperCase()}${  path.parse(p).name.slice(1).toLocaleLowerCase()}` 
+        , function(e){log(e)})
+         log("not same "); 
       }
 
       }
 
     })
-    
+     

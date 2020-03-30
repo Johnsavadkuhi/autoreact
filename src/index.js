@@ -21,7 +21,7 @@ const watcher = chokidar.watch('./src', {
         
         fs.writeFile(p , `import React from 'react' \n
         
-        function ${path.parse(p).name[0].toUpperCase() }${ path.parse(p).name.slice(1).toLowerCase()}(){
+ function ${path.parse(p).name[0].toUpperCase() }${ path.parse(p).name.slice(1).toLowerCase()}(){
 
           return (<div></div>);
 
@@ -30,6 +30,10 @@ const watcher = chokidar.watch('./src', {
         export default ${path.parse(p).name[0].toUpperCase()}${  path.parse(p).name.slice(1).toLocaleLowerCase()} ; 
         ` , function(e){log(e)});
 
+      if(path.parse(p).name[0] !== path.parse(p).name[0].toUpperCase()){
+        fs.rename(p , )
+        log("not same "); 
+      }
 
       }
 

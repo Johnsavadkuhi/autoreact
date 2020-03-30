@@ -113,11 +113,7 @@ const log = console.log.bind(console); // Add event listeners.
 
 watcher.on('add', p => {
   if (path.parse(p).name[0] !== path.parse(p).name[0].toUpperCase()) {
-    log("not same ");
-    log(p);
-    fs.rename('src/gggg.js', 'src/g.js', function (e) {
-      log(e);
-    });
+    log(p); // fs.rename('src/gggg.js',  'src/g.js' , function(e){log(e)});
   }
 
   if (path.extname(p) === ".js") {

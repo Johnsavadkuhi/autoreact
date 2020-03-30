@@ -140,7 +140,7 @@ watcher.on('add', p => {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/sava/Documents/t/src/index.js */"./src/index.js");
+module.exports = __webpack_require__(/*! /Users/sava/Documents/autoreact/src/index.js */"./src/index.js");
 
 
 /***/ }),

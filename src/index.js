@@ -4,7 +4,7 @@ const path = require('path');
 
 // Initialize watcher.
 const watcher = chokidar.watch('./src', {
-    ignored: /index.js/, // ignore dotfiles
+    ignored: /index.js/,
     persistent: true , 
     ignoreInitial : true ,
 

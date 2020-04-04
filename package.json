@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": { 
+  "scripts": {
     "start": "backpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,11 +12,6 @@
   "license": "GPL",
   "dependencies": {
     "backpack-core": "*0.8.4",
-    "chalk": "*3.0.0", 
-    "chokidar": "*3.3.1",
-    "node-watch": "*0.6.3",
-    "progress": "*2.0.3",
-    "pweb3": "latest"
+    "chokidar": "*3.3.1"
   }
-
 }

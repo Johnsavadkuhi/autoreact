@@ -15,10 +15,11 @@ const watcher = chokidar.watch('./src', {
   
   // Add event listeners.
   watcher
-    .on('add', p => {
+
+    .on('add', (p , event) => {
 
       if(path.parse(p).name[0] !== path.parse(p).name[0].toUpperCase()){
-        log(p);
+        log("need to be rename : " , p);
         
      }
       if(path.extname(p)===".js"){
@@ -30,7 +31,7 @@ const watcher = chokidar.watch('./src', {
         }
         
         export default ${path.parse(p).name[0].toUpperCase()}${  path.parse(p).name.slice(1).toLocaleLowerCase()} ; 
-        ` , function(e){log(e)});
+        ` , function(e){if (e) log(e)});
 
      
 

@@ -16,9 +16,7 @@ const watcher = chokidar.watch('./src', {
   const log = console.log.bind(console);
   
   // Add event listeners.
-  watcher
-
-    .on('add', (p , event) => {
+  watcher.on('add', (p , event) => {
 
       if(path.parse(p).name[0] !== path.parse(p).name[0].toUpperCase()){
         log("need to be rename : " , p);

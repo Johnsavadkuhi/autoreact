@@ -13,10 +13,8 @@ function autoreact (){
 
   });
    
-  // Something to use when events are received.
   const log = console.log.bind(console);
   
-  // Add event listeners.
   watcher.on('add', (p , event) => {
 
       if(path.parse(p).name[0] !== path.parse(p).name[0].toUpperCase()){

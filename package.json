@@ -1,11 +1,10 @@
 {
   "name": "autoreactpro",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "start": "backpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test \" && exit 1"
   },
   "keywords": [],
   "author": "John Savadkuhi physitime@gmail.com",

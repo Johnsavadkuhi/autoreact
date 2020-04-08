@@ -4,7 +4,7 @@ const chokidar = require('chokidar');
 const fs = require('fs');
 const path = require('path');
 
-module.exports = (function autoreact() {
+module.exports = (function autoreactpro() {
 
   const watcher = chokidar.watch('./src', {
     ignored: /index.js/,

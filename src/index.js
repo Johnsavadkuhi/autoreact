@@ -4,8 +4,9 @@ const chokidar  = require('chokidar');
 const fs = require('fs'); 
 const path = require('path'); 
 
-// Initialize watcher.
-const watcher = chokidar.watch('./src', {
+function autoreact (){
+  
+  const watcher = chokidar.watch('./src', {
     ignored: /index.js/,
     persistent: true , 
     ignoreInitial : true ,
@@ -38,4 +39,6 @@ const watcher = chokidar.watch('./src', {
       }
 
     })
-     
+}
+
+module.exports ={autoreact} ; 
